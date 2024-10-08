@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos Turísticos - Turismea Perú S.A.C.</title>
+    <link rel="stylesheet" href="estilo_proyecto.css">
+    <style>
+        .destinos {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .destinos h2 {
+            margin-bottom: 2rem;
+            color: #28a745;
+        }
+
+        .destino-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .destino-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .destino-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .destino-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .destino-card h3 {
+            font-size: 1.5rem;
+            color: #28a745;
+            margin: 1rem 0;
+        }
+
+        .destino-card p {
+            padding: 0 1rem 1.5rem 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Turismea Perú S.A.C.</div>
+    </header>
+
+    <section class="destinos">
+        <h2>Destinos Turísticos Populares</h2>
+        <div class="destino-grid">
+            <!-- Lugar 1 - -->
+            <div class="destino-card">
+                <img id="img-canta" src="IMAGENES TOURS/CANTA.jpg" alt="Canta" 
+                    onmouseover="cambiarImagen('img-canta', 'IMAGENES TOURS/CANTA1.jpg')"
+                    onmouseout="cambiarImagen('img-canta', 'IMAGENES TOURS/CANTA.jpg')">
+                <h3>Canta</h3>
+                <p>Un paraíso natural cerca de Lima. Ideal para el trekking y el turismo ecológico.</p>
+            </div>
+            
+            <!-- Lugar 2 -  -->
+            <div class="destino-card">
+                <img id="img-lunah" src="IMAGENES TOURS/LUNAHUANA.jpg" alt="Lunahuaná"
+                    onmouseover="cambiarImagen('img-lunah', 'IMAGENES TOURS/LUNAHUANA1.jpg')"
+                    onmouseout="cambiarImagen('img-lunah', 'IMAGENES TOURS/LUNAHUANA.jpg')">
+                <h3>Lunahuaná</h3>
+                <p>Disfruta de deportes de aventura como canotaje y senderismo.</p>
+            </div>
+            
+            <!-- Lugar 3 - -->
+            <div class="destino-card">
+                <img id="img-antio" src="IMAGENES TOURS/ANTIOQUIA.jpg" alt="Antioquía"
+                    onmouseover="cambiarImagen('img-antio', 'IMAGENES TOURS/ANTIOQUIA1.jpg')"
+                    onmouseout="cambiarImagen('img-antio', 'IMAGENES TOURS/ANTIOQUIA.jpg')">
+                <h3>Antioquía</h3>
+                <p>Conocida por sus casas pintadas de colores y su clima agradable.</p>
+            </div>
+            
+            <!-- Lugar 4 - -->
+            <div class="destino-card">
+                <img id="img-chancay" src="IMAGENES TOURS/CASTILLO_CHANCAI.jpg" alt="Castillo_Chancay"
+                    onmouseover="cambiarImagen('img-chancay', 'IMAGENES TOURS/CASTILLO_CHANCAI1.jpg')"
+                    onmouseout="cambiarImagen('img-chancay', 'IMAGENES TOURS/CASTILLO_CHANCAI.jpg')">
+                <h3>Castillo de Chancay</h3>
+                <p>Explora la Reserva Nacional y sus playas impresionantes.</p>
+            </div>
+            
+            <!-- Lugar 5 -  -->
+            <div class="destino-card">
+                <img id="img-churin" src="IMAGENES TOURS/CHURIN.jpg" alt="CHURIN"
+                    onmouseover="cambiarImagen('img-churin', 'IMAGENES TOURS/CHURIN1.jpg')"
+                    onmouseout="cambiarImagen('img-churin', 'IMAGENES TOURS/CHURIN.jpg')">
+                <h3>CHURIN</h3>
+                <p>Descubre la antigua ciudadela inca, una de las 7 maravillas del mundo.</p>
+            </div>
+            
+            <!-- Lugar 6 -  -->
+            <div class="destino-card">
+                <img id="img-MARCAHUASI" src="IMAGENES TOURS/MARCAHUASI.jpg" alt="MARCAHUASI"
+                    onmouseover="cambiarImagen('img-MARCAHUASI', 'IMAGENES TOURS/MARCAHUASI.jpg')"
+                    onmouseout="cambiarImagen('img-MARCAHUASI', 'IMAGENES TOURS/MARCAHUASI1.jpg')">
+                <h3>MARCAHUASI</h3>
+                <p>La Ciudad Blanca, famosa por su arquitectura colonial y su gastronomía.</p>
+            </div>
+        </div>
+    </section>
+
+<footer>
+    <center>
+        <p>Copyright &copy; 2024 Turismea Perú.</p>
+        <p>Todos los derechos reservados.</p> 
+    </center>
+</footer>
+
+    <script>
+        function cambiarImagen(idImagen, nuevaSrc) {
+            document.getElementById(idImagen).src = nuevaSrc;
+        }
+    </script>
+</body>
+</html>

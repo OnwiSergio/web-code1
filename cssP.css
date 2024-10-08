@@ -1,0 +1,172 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #fff; /*Fondo blanco en general*/
+    color: #333;
+}
+
+/*Encabezado*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00494a;
+    padding: 1rem;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Clas: HERO, imagen de pantalla inicial*/
+.hero {
+    background-image: url('IMAGENES TOURS/portada.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff; /*Texto de las letras sobre la imagen*/
+    animation: animarFondo 20s infinite ease-in-out; /*Animación a la sección*/
+    animation-timing-function: ease-in-out; /*transcición*/
+}
+
+/*EDICIÓN DE LA ANIMACIÓN 1°*/
+@keyframes animarFondo {
+    0% {
+        background-size: 100%; /*tamaño original*/
+    }
+    40% {
+        background-size: 150%; /*aumento de img.*/
+    }
+    60% {
+        background-size: 150%; /*se mantiene la img.*/
+    }
+    100% {
+        background-size: 100%; /*Reduce la imag.*/
+    }
+}
+
+/*Descripción del HERO*/
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    background-color: #ffc107;
+    color: #333;
+    padding: 0.8rem 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/*Efecto de botones*/
+.btn:hover {
+    background-color: #ffca2c;
+}
+
+/*Casilla Destinos populares*/
+.destinos {
+    padding: 1rem;
+    text-align: center;
+    background-color: #fff; /*Fondo blanco*/
+}
+
+.destinos h2 {
+    margin-bottom: 2rem; /*Tamaño vertical del fondo blanco*/
+    color: #28a745;
+}
+
+/*Diseño en cuadrícula para los destinos*/
+.destino-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem; /*Tamaño de cuadros destinos*/
+}
+
+/*Estilo de las tarjetas de destino*/
+.destino-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+
+.destino-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/*Efecto movimiento tarjeta*/
+.destino-card:hover {
+    transform: translateY(-10px); /*Mueve la tarjeta hacia arriba al pasar el cursor*/
+}
+
+.destino-card h3 {
+    font-size: 1.5rem;
+    color: #28a745;
+    margin: 1rem 0;
+}
+
+.destino-card p {
+    padding: 0 1rem 1.5rem 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #00494a;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/*FOOTER*/
+.text-6 footer {
+    color: white; /* Hace que el texto del footer sea blanco */
+}
+
+.text-6 hr {
+    border: 2px solid #5e5e5e; /* Borde blanco de 2px */
+    width: 100%;             /* Asegura que el hr ocupe todo el ancho */
+}

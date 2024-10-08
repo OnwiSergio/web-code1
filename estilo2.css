@@ -1,0 +1,106 @@
+/*IMAGENES*/
+body {
+    background-color:#000000; /*Esto es un fondo negro de las imagenes ya establecidas*/
+    margin: 0;
+    /*No tocar este código, evitamos el sobre imagen*/
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+img{
+    width: 100%; /*Ancho*/
+    height: 100vh; /*Alto*/
+    object-fit: cover; /* zoom de la imagen :v */
+    display: block; /* para mostrar imagenes por defecto */
+}
+
+/*LETRAS PARA LA PRIMERA IMAGEN*/
+.text-1 {
+    position: absolute; /* Posiciona el texto sobre la imagen */
+    top: 35%; /* Centra verticalmente */
+    left: 10%; /* Alinea a la izquierda con un margen */
+    color: white; /* Color del texto en blanco */
+    text-align: left; /* Alinea el texto a la izquierda */
+    width: 80%; /* Ajusta el ancho del contenedor de texto */
+}
+
+/*TIPO DE FUENTE DE LETRA TAMAÑO*/
+.text-1 h1.linea1 {
+    font-size: 10em; /* Tamaño del texto para el primer h1 */
+    margin: 0; /*Márgenes por defecto*/
+    font-weight: bold; /*NEGRITA*/
+/*    display: block; /* Hace que el ancho del h1 se ajuste al contenido */
+}
+
+/* 2° H1 */
+.text-1 h1.linea2 {
+    font-size: 10.5em; /* Tamaño del 2° H1 */
+    margin-top: 0; /* ajusta el espacio de turismea peru */
+    padding-left: 1.5em;
+}
+
+.text-1 h2 {
+    font-size: 6.5em; /* Tamaño del h2 */
+    margin: 10px 0;
+/*    display: block; /* Hace que el ancho del h2 se ajuste al contenido */
+}
+
+/*HR O LINEAS*/
+.hr-primero {
+    border: 0;
+    border-top: 10px solid white;
+    margin: 10px 0;
+    width: 65%; /* Ajusta el ancho del hr */
+/*    display: block; */
+}
+
+.hr-segundo {
+    border: 0;
+    border-top: 10px solid white; /* Línea azul punteada para el segundo hr */
+    margin: 10px 0;
+    width: 70%; /* Ajusta el ancho del hr */
+/*    display: block; */
+}
+
+/*LETRAS PARA LA SEGUNDA IMAGEN*/
+.text-2 {
+    position: absolute;
+    top: 120%;
+    left: 10%;
+    color: white;
+    text-align: justify;
+    width: 70%;
+}
+
+/*TAMAÑO DE LETRA*/
+.text-2 h3 {
+    font-size: 9.5em;
+    font-weight: bold;
+}
+
+.text-2 p {
+    font-size: 4.5em;
+    margin-top: 10px;
+}
+
+/*LETRAS PARA LA TERCERA IMAGEN*/
+.text-3 {
+    position: absolute;
+    top: 210%;
+    left: 10%;
+    color: white;
+    text-align: right;
+    width: 80%;
+}
+
+/*TAMAÑO DE LETRA*/
+.text-3 h3 {
+    font-size: 12.5em;
+    font-weight: bold;
+}
+
+.text-3 p {
+    font-size: 4.5em;
+    margin-top: 10px;
+}
+

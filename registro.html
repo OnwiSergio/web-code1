@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario - Turismea Perú S.A.C.</title>
+    <link rel="stylesheet" href="CSS/cssR.css"> <!-- Enlace al archivo CSS externo -->
+</head>
+<body>
+    <div class="container" id="contenedor_registro">
+        <h1>Registro de Usuario - Turismea Perú S.A.C.</h1>
+        <form id="registroForm">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="pais">País de residencia:</label>
+            <input type="text" id="pais" name="pais" required>
+
+            <label for="destino">Destino de interés:</label>
+            <select id="destino" name="destino" required>
+                <option value="">Seleccione un destino</option>
+                <option value="churrin">Antioquía</option>
+                <option value="castillo-chancay">Canta</option>
+                <option value="antioquia">Castillo de Chancay</option>
+                <option value="cusco">Churin</option>
+                <option value="cajamarca">LunaHuana</option>
+                <option value="canta">MarcaHuasi</option>
+            </select>
+
+            <label for="fechaViaje">Fecha aproximada de viaje:</label>
+            <input type="date" id="fechaViaje" name="fechaViaje" required>
+
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+    
+    <script src="JavaScripR/registro.js"></script>
+
+    <footer>
+        <center>
+            <p>Copyright &copy; 2024 Turismea Perú.</p>
+            <p>Todos los derechos reservados.</p> 
+            <hr>
+        </center>
+    </footer>
+</body>
+</html>
