@@ -1,21 +1,20 @@
+
+/* PARA HACER QUE EL CONTENIDO BAJE DEBAJO DEL HEADER FIJO */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
-    padding: 20px;
-    background-image: url('../IMAGENES TOURS/fondo-turismo.jpg'); /* Fondo con imagen */
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    padding: 0;
+    background-image: url("../IMAGENES TOURS/fondo-turismo.jpg"); /* Aquí está el fondo */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh;
 }
+
 .container {
     position: absolute;
     left: 5%;    /*posición del contenedor de Registro*/
-    top: 5%; /*posición del contenedor distancia*/
-    max-width: 600px; /*tamaño de la tabla*/
+    max-width: 550px; /*tamaño de la tabla*/
 
     background: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
     padding: 20px;
@@ -81,7 +80,6 @@ footer p {
 
 }
 footer hr {
-/*    border: 2px solid #fff; /* Borde blanco de 2px */
     width: 100%; /* Asegura que el hr ocupe todo el ancho */
     margin: 0px 0; /* Espaciado arriba y abajo del hr */
 }
