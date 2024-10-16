@@ -4,61 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinos Turísticos - Turismea Perú S.A.C.</title>
-    <link rel="stylesheet" href="estilo_proyecto.css">
-    <style>
-        .destinos {
-            padding: 2rem;
-            text-align: center;
-        }
+    <!-- Vinculación al archivo CSS -->
+    <link rel="stylesheet" href="CSS/cssDs.css">
 
-        .destinos h2 {
-            margin-bottom: 2rem;
-            color: #28a745;
-        }
-
-        .destino-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .destino-card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
-
-        .destino-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            transition: opacity 0.3s ease;
-        }
-
-        .destino-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .destino-card h3 {
-            font-size: 1.5rem;
-            color: #28a745;
-            margin: 1rem 0;
-        }
-
-        .destino-card p {
-            padding: 0 1rem 1.5rem 1rem;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <div class="logo">Turismea Perú S.A.C.</div>
+        <div class="logo">
+            <h1>Turismea Perú S.A.C.</h1>
+        </div>
+            <nav>
+                <ul>
+                    <li><a href="quienes_somos.html">¿Quiénes somos?</a></li>
+                    <li><a href="contacto_destino.html">Contáctanos</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="Compra_pasaje.html">Compra de pasaje</a></li>
+                    <li><a href="index.html">Inicio</a></li> <!-- Corregí este enlace -->
+                </ul>
+            </nav>
     </header>
 
     <section class="destinos">
-        <h2>DESTINOS TURÍSTICOS POPULARES</h2>
+        <h2>DESTINOS TURÍSTICOS</h2>
         <div class="destino-grid">
             <!-- Lugar 1 - -->
             <div class="destino-card">
@@ -69,7 +36,7 @@
                 <p>Un paraíso natural en la sierra limeña. Ideal para el senderismo, el ciclismo de montaña y disfrutar de sus cascadas y paisajes andinos.</p>
             </div>
             
-            <!-- Lugar 2 -  -->
+            <!-- Lugar 2 - -->
             <div class="destino-card">
                 <img id="img-lunah" src="IMAGENES TOURS/LUNAHUANA.jpg" alt="Lunahuaná"
                     onmouseover="cambiarImagen('img-lunah', 'IMAGENES TOURS/LUNAHUANA1.jpg')"
@@ -96,7 +63,7 @@
                 <p>Un majestuoso castillo frente al mar que combina historia con vistas impresionantes. Ideal para un paseo cultural y disfrutar de la cercana reserva nacional y playas.</p>
             </div>
             
-            <!-- Lugar 5 -  -->
+            <!-- Lugar 5 - -->
             <div class="destino-card">
                 <img id="img-churin" src="IMAGENES TOURS/CHURIN.jpg" alt="CHURIN"
                     onmouseover="cambiarImagen('img-churin', 'IMAGENES TOURS/CHURIN1.jpg')"
@@ -105,7 +72,7 @@
                 <p>Relájate en las aguas termales de Churín, famosas por sus propiedades medicinales. Un destino perfecto para quienes buscan bienestar y conexión con la naturaleza.</p>
             </div>
             
-            <!-- Lugar 6 -  -->
+            <!-- Lugar 6 - -->
             <div class="destino-card">
                 <img id="img-MARCAHUASI" src="IMAGENES TOURS/MARCAHUASI.jpg" alt="MARCAHUASI"
                     onmouseover="cambiarImagen('img-MARCAHUASI', 'IMAGENES TOURS/MARCAHUASI.jpg')"
@@ -114,7 +81,7 @@
                 <p>Explora el enigmático altiplano de Marcahuasi, donde impresionantes formaciones rocosas te transportan a otra era. Perfecto para los amantes del trekking y el misterio arqueológico.</p>
             </div>
 
-            <!-- Lugar 7 -  -->
+            <!-- Lugar 7 - -->
             <div class="destino-card">
                 <img id="img-huacachina" src="IMAGENES TOURS/HUACACHINA.jpg" alt="HUACACHINA"
                     onmouseover="cambiarImagen('img-huacachina', 'IMAGENES TOURS/HUACACHINA1.jpg')"
@@ -123,7 +90,7 @@
                 <p>Un oasis en medio del desierto de Ica. Perfecto para disfrutar de deportes de aventura como el sandboarding y paseos en tubulares por sus impresionantes dunas.</p>
             </div>
 
-            <!-- Lugar 8 -  -->
+            <!-- Lugar 8 - -->
             <div class="destino-card">
                 <img id="img-vinicunca" src="IMAGENES TOURS/VINICUNCA.jpg" alt="VINICUNCA"
                     onmouseover="cambiarImagen('img-vinicunca', 'IMAGENES TOURS/VINICUNCA1.jpg')"
@@ -134,17 +101,14 @@
         </div>
     </section>
 
-<footer>
-    <center>
-        <p>Copyright &copy; 2024 Turismea Perú.</p>
-        <p>Todos los derechos reservados.</p> 
-    </center>
-</footer>
+    <footer>
+        <center>
+            <p>Copyright &copy; 2024 Turismea Perú.</p>
+            <p>Todos los derechos reservados.</p> 
+        </center>
+    </footer>
 
-    <script>
-        function cambiarImagen(idImagen, nuevaSrc) {
-            document.getElementById(idImagen).src = nuevaSrc;
-        }
-    </script>
+    <!-- Vinculación al archivo JavaScript -->
+    <script src="dsjava/script.js"></script>
 </body>
 </html>
