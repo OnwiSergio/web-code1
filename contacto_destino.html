@@ -6,6 +6,35 @@
     <title>Contacto - Turismea Perú S.A.C.</title>
     <link rel="stylesheet" href="estilo_proyecto.css">
     <style>
+
+
+        /* Definimos el header con un ancho del 100% de la página */
+header {
+    width: 100%;
+    overflow: hidden; /* Para que no se salga el contenido del header */
+}
+
+/* Animación de movimiento del título */
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    position: relative; /* Importante para que el logo pueda moverse con animación */
+    animation: moverLogo 4s infinite alternate; /* Definimos una animación de 4 segundos que va de un lado a otro de manera alterna */
+}
+
+/* Definimos la animación para mover el logo de extremo a extremo */
+@keyframes moverLogo {
+    0% {
+        left: 0; /* Inicia en la izquierda */
+    }
+    100% {
+        left: 100%; /* Se mueve hasta el extremo derecho */
+        transform: translateX(-100%); /* Para asegurarnos de que el logo no se salga del viewport */
+    }
+}
+        /* Flexbox para la sección de contacto */
         .contacto-info {
             display: flex;
             justify-content: space-between;
@@ -16,14 +45,36 @@
 
         .contacto-info div {
             flex: 1;
+            transition: transform 0.3s ease-in-out;
         }
 
-        .contacto-info iframe {
-            width: 100%;
-            height: 300px;
-            border: 0;
+        /* Grid para organizar información adicional */
+        .info-adicional {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            padding: 2rem;
+            background-color: #f4f4f4;
         }
 
+        .info-adicional div {
+            background-color: #fff;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .info-adicional div:hover {
+            transform: scale(1.15);
+        }
+
+        /* Animación con hover para la sección de contacto */
+        .contacto-info div:hover {
+            transform: scale(1.15);
+        }
+
+        /* Estilos del formulario */
         .formulario-contacto {
             margin-top: 2rem;
         }
@@ -36,40 +87,66 @@
             border-radius: 5px;
         }
 
+        /* Animación con hover en el botón */
         .formulario-contacto button {
             background-color: #28a745;
             color: #fff;
             padding: 0.8rem;
             border: none;
             cursor: pointer;
+            position: relative;
+            overflow: hidden;
         }
 
         .formulario-contacto button:hover {
             background-color: #218838;
+            animation: buttonHover 0.5s forwards;
         }
+
+        /* Keyframes para la animación del botón */
+        @keyframes buttonHover {
+            0% { background-color: #28a745; }
+            50% { background-color: #218838; }
+            100% { background-color: #1e7e34; }
+        }
+
+       
     </style>
 </head>
-<body>
     <header>
         <div class="logo">Turismea Perú S.A.C.</div>
-        
     </header>
 
     <section class="contacto-info">
         <div class="informacion">
             <h2>Datos de contacto</h2>
-            <p><strong>Nombre de Contacto:</strong> Juan Pérez Flores Cano</p>
+            <p><strong>Nombre de Contacto:</strong> Juan Pérez</p>
             <p><strong>Celular:</strong> +51 987 654 321</p>
-            <p><strong>Dirección:</strong> Jr. Huallaga 15001, Lima, Perú</p>
-            <p><strong>Correo electrónico:</strong> contactoturismeaperu@gmail.com</p>
+            <p><strong>Dirección:</strong> Av. Ejemplo 123, Lima, Perú</p>
+            <p><strong>Correo electrónico:</strong> contacto@turismeaperu.com</p>
         </div>
         <div class="mapa">
             <h2>Ubicación</h2>
-            <!-- Google Maps embed -->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.221048438704!2d-77.03125218458547!3d-12.046374091757441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8d3b118d171%3A0x1437be4f5589c6e9!2sPlaza%20Mayor%20de%20Lima!5e0!3m2!1ses!2spe!4v1694718024890!5m2!1ses!2spe"
                 allowfullscreen="" loading="lazy">
             </iframe>
+        </div>
+    </section>
+
+    <!-- Nueva sección con Grid -->
+    <section class="info-adicional">
+        <div>
+            <h3>Horario de Atención</h3>
+            <p>Lunes a Viernes: 9am - 6pm</p>
+        </div>
+        <div>
+            <h3>Soporte</h3>
+            <p>Correo: soporte@turismeaperu.com</p>
+        </div>
+        <div>
+            <h3>Oficina Central</h3>
+            <p>Lima, Perú</p>
         </div>
     </section>
 
@@ -92,11 +169,11 @@
         </form>
     </section>
 
-<footer>
-    <center>
-        <p>Copyright &copy; 2024 Turismea Perú.</p>
-        <p>Todos los derechos reservados.</p> 
-    </center>
-</footer>
+    <footer>
+        <center>
+            <p>Copyright &copy; 2024 Turismea Perú.</p>
+            <p>Todos los derechos reservados.</p> 
+        </center>
+    </footer>
 </body>
 </html>
