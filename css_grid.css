@@ -1,15 +1,22 @@
 /* Estilo general del cuerpo */
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #fbc2eb, #a6c1ee); /* Fondo degradado suave */
-    margin: 0;
-    padding: 10;
-    display: auto;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb); /* Degradado azul celeste */
+    padding: 10px;
+    display: inline;
     justify-content: center;
     align-items: center;
-    height: 0vh;
-    color: #333;
+    min-height: 100vh;
+    color: #2c3e50; /* Texto en color oscuro para contraste */
 }
+
+h1 {
+    font-weight: 600; /* Poppins con peso grueso para destacar el título */
+    color: #2c3e50; /* Un color oscuro para contraste */
+    text-transform: uppercase; /* Pone el texto en mayúsculas para un estilo más llamativo */
+    letter-spacing: 2px; /* Añade un poco de espacio entre letras */
+}
+
 
 /* Marco del formulario */
 .marco {
@@ -33,6 +40,7 @@ h1 {
 table {
     width: 100%;
     border-collapse: collapse;
+    background color: skyblue;
 }
 
 /* Estilo para las celdas de la tabla */
