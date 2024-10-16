@@ -9,7 +9,7 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #fff;
+    background-color: transparent; /* Fondo transparente para el body */
     color: #333;
 }
 
@@ -26,7 +26,6 @@ header {
     z-index: 1000; /* Mantener el encabezado visible */
     color: white;
 }
-
 
 /* Estilo del Logo */
 .logo h1 {
@@ -67,10 +66,10 @@ nav ul li a:hover {
 .destinos {
     padding: 5rem 2rem;
     text-align: center;
-    background-image: url('IMAGENES TOURS/fondo-turismo.jpg'); /* Fondo de pantalla */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    /*background-image: url('IMAGENES TOURS/fondo-turismo.jpg'); /* Fondo de la sección */
+    /*background-size: cover; /* Cubrir toda la sección */
+    /*background-position: center; /* Centrar la imagen */
+    /*min-height: 100vh; /* Asegurarse de que la sección ocupe al menos el alto de la ventana */
 }
 
 .destinos h2 {
@@ -89,7 +88,7 @@ nav ul li a:hover {
 
 /* Estilo de las tarjetas de destino */
 .destino-card {
-    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con transparencia */
+    background-color: transparent; /* Fondo transparente para que se vea el fondo de la sección */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -111,7 +110,7 @@ nav ul li a:hover {
     font-size: 1.5rem;
 }
 
-/* Estilos para el Footer*/
+/* Estilos para el Footer */
 footer {
     background-color: #00494a; /* Color de fondo del footer */
     color: white;
