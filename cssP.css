@@ -1,5 +1,4 @@
 
-
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +18,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #00494a;
-    padding: 1rem;
+    padding: 0.4rem;
     color: #fff;
 }
 
@@ -55,14 +54,14 @@ nav ul li a {
     align-items: center;
     text-align: center;
     color: #fff; /*Texto de las letras sobre la imagen*/
-    animation: animarFondo 20s infinite ease-in-out; /*Animación a la sección*/
+    animation: animarFondo 15s infinite ease-in-out; /*Animación a la sección*/
     animation-timing-function: ease-in-out; /*transcición*/
 }
 
-/*EDICIÓN DE LA ANIMACIÓN 1°*/
+/*EDICIÓN DE LA ANIMACIÓN 1° de fondo*/
 @keyframes animarFondo {
     0% {
-        background-size: 100%; /*tamaño original*/
+        background-size: 120%; /*tamaño original*/
     }
     40% {
         background-size: 150%; /*aumento de img.*/
@@ -71,7 +70,7 @@ nav ul li a {
         background-size: 150%; /*se mantiene la img.*/
     }
     100% {
-        background-size: 100%; /*Reduce la imag.*/
+        background-size: 120%; /*Reduce la imag.*/
     }
 }
 
@@ -111,20 +110,18 @@ nav ul li a {
 }
 
 .destinos h2 {
-    margin-bottom: 2rem; /*Tamaño vertical del fondo blanco*/
+    margin-bottom: 1rem; /*Tamaño vertical del fondo blanco*/
     color: #28a745;
 }
 
 /*Diseño en cuadrícula para los destinos*/
 .destino-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem; /*Tamaño de cuadros destinos*/
 }
 
 /*Estilo de las tarjetas de destino*/
 .destino-card {
-    background-color: #fff;
+    background-color: #fff; /* Fondo blanco con transparencia */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -134,7 +131,7 @@ nav ul li a {
 
 .destino-card img {
     width: 100%;
-    height: 200px;
+    height: auto;
     object-fit: cover;
 }
 
