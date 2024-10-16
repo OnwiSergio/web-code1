@@ -1,0 +1,126 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Flexbox para el Header */
+header {
+    display: flex;
+    justify-content: space-between; /* Alinea el logo y la navegación */
+    align-items: center;
+    background-color: #00494a; /* Color oscuro de fondo */
+    padding: 10px 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Mantener el encabezado visible */
+    color: white;
+}
+
+
+/* Estilo del Logo */
+.logo h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    color: #fff; /* Color blanco para el texto del logo */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.5s ease;
+}
+
+nav ul li a:hover {
+    color: #ffb400; /* Cambiar a color amarillo en hover */
+}
+
+/* Estilos para la sección de destinos */
+.destinos {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-image: url('IMAGENES TOURS/fondo-turismo.jpg'); /* Fondo de pantalla */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.destinos h2 {
+    margin-bottom: 2rem;
+    color: #007e80; /* Cambié a blanco */
+    font-size: 2.5em; /* Reduje el tamaño del texto */
+    text-shadow: none; /* Quité la sombra del texto */
+}
+
+/* Grid para las tarjetas de destinos */
+.destino-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Ajuste de tamaño mínimo de los cuadros */
+    gap: 2rem; /* Espacio entre las tarjetas */
+}
+
+/* Estilo de las tarjetas de destino */
+.destino-card {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con transparencia */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.destino-card:hover {
+    transform: translateY(-10px); /* Efecto de elevación */
+}
+
+.destino-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.destino-card h3 {
+    font-size: 1.5rem;
+}
+
+/* Estilos para el Footer*/
+footer {
+    background-color: #00494a; /* Color de fondo del footer */
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
