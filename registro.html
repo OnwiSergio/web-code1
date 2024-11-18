@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario - Turismea Perú S.A.C.</title>
+    <link rel="stylesheet" href="CSS/cssR.css"> <!-- Enlace al archivo CSS externo -->
+
+    <!-- Estilos adicionales para el encabezado y el logo -->
+    <style>
+        /* ESTILO PARA EL ENCABEZADO */
+        .header-encabezado {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 5px;
+            background-color: #00494a; /* Color oscuro de fondo para el encabezado */
+            color: white;
+            position: 100%; /* Cambiado a posición absoluta */
+            width: 100%; /* Asegura que el encabezado ocupe todo el ancho */
+            top: 0; /* Ubica el encabezado en la parte superior */
+            z-index: 1000; /* Mantener el encabezado siempre visible */
+        }
+
+        /* ESTILO DEL LOGO */
+        .logo h1 {
+            font-size: 1.5em; /* Tamaño de letra del logo */
+            font-weight: bold;
+            margin: 0;
+            color: #fff; /* Color blanco para el texto del logo */
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+
+        /* ESTILO DE NAVEGACIÓN */
+        .navgrupo ul {
+            list-style-type: none; /* Eliminar los puntos de la lista */
+            margin: 0;
+            padding: 0; /* Asegurarse de que el padding sea 0 */
+            display: flex;
+            gap: 10px; /* Espacio entre los elementos del menú */
+        }
+
+        .navgrupo ul li {
+            display: inline; /* Mostrar los elementos del menú en línea */
+        }
+
+        .navgrupo ul li a {
+            text-decoration: none; /* Eliminar subrayado de los enlaces */
+            color: white; /* Color blanco para los enlaces */
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: color 0.5s ease;
+        }
+
+        .navgrupo ul li a:hover {
+            color: #ffb400; /* Cambiar a color amarillo en hover */
+        }
+
+        .container {
+            top: 15%; /*posición del contenedor distancia*/
+        }
+    </style>
+
+</head>
+<body>
+    <!-- ENCABEZADO  style="background-image: url('IMAGENES TOURS/fondo-turismo.jpg')" -->
+
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="header-encabezado">
+            <div class="logo">
+                <h1>Turismea Perú <br> S.A.C.</h1>
+            </div>
+            <nav class="navgrupo">
+                <ul>
+                <li><a href="Pagina_Principal.html">Turismea</a></li>
+                <li><a href="destinos_turisticos.html">Destinos Turísticos</a></li>
+                <li><a href="quienes_somos.html">Quienes Somos</a></li>
+                <li><a href="contacto_destino.html">Contáctanos</a></li>
+                <li><a href="Compra_pasaje.php">Compra de pasaje</a></li>
+                <li><a href="   ">   </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   <!-- --> 
+    
+
+
+   <!-- --> 
+
+    <div class="container" id="contenedor_registro">
+        <h1>Registro de Usuario - Turismea Perú S.A.C.</h1>
+        <form id="registroForm" method="POST" action="PHP/registro.php">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="pais">País de residencia:</label>
+            <input type="text" id="pais" name="pais" required>
+
+            <label for="destino">Destino de interés:</label>
+            <select id="destino" name="destino" required>
+                <option value="">Seleccione un destino</option>
+                <option value="churrin">Antioquía</option>
+                <option value="castillo-chancay">Canta</option>
+                <option value="antioquia">Castillo de Chancay</option>
+                <option value="cusco">Churin</option>
+                <option value="cajamarca">LunaHuana</option>
+                <option value="canta">MarcaHuasi</option>
+            </select>
+
+            <label for="fechaViaje">Fecha aproximada de viaje:</label>
+            <input type="date" id="fechaViaje" name="fechaViaje" required>
+
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+    
+    <script src="JavaScripR/registro.js"></script>
+
+    <footer>
+        <center>
+            <p>Copyright &copy; 2024 Turismea Perú.</p>
+            <p>Todos los derechos reservados.</p> 
+        </center>
+    </footer>
+</body>
+</html>
