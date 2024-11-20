@@ -27,7 +27,20 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         }
 
-        h1, h2 {
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+            color: white;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        h2 {
             text-align: center;
         }
 
@@ -80,20 +93,26 @@
         footer {
             text-align: center;
             margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
         }
-         /* Estilo específico para el texto del copyright */
+
+        /* Estilo específico para el texto del copyright */
         footer p {
             font-family: "Times New Roman", Times, serif;
             font-size: 14px;
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
-    <div class="contenido">
-        <header>
-            <h1>Turismea Perú S.A.C.</h1>
-        </header>
+    <header>
+        <h1>Turismea Perú S.A.C.</h1>
+    </header>
 
+    <div class="contenido">
         <section class="contacto-info">
             <div class="informacion">
                 <h2>Datos de contacto</h2>
@@ -126,11 +145,11 @@
                 <button type="submit">Enviar</button>
             </form>
         </section>
-
-        <footer>
-            <p>Copyright © 2024 Turismea Perú.</p> 
-            <p>Todos los derechos reservados.</p>
-        </footer>
     </div>
+
+    <footer>
+        <p>Copyright © 2024 Turismea Perú.</p> 
+        <p>Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
